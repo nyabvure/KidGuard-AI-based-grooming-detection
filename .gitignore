@@ -1,0 +1,54 @@
+# === SENSITIVE — NEVER COMMIT ===
+.env
+*.env
+backend/.env
+frontend/.env
+twilio_2FA_recovery_code.txt
+*recovery_code*
+*secret*
+*credentials*
+*token.json
+
+# === Python ===
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# === Node / React ===
+node_modules/
+/frontend/build
+/frontend/.pnp
+frontend/.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/install-state.gz
+coverage/
+
+# === Logs ===
+*.log
+backend.log
+backend_test.log
+test_results.txt
+test_reports/
+
+# === Temp / OS files ===
+.DS_Store
+~$*
+*.tmp
+Thumbs.db
+
+# === Generated / build artifacts ===
+*.pyc
+*.pyo
+generate_report.py
+
+# === IDE ===
+.idea/
+.vscode/
+*.suo
+*.user

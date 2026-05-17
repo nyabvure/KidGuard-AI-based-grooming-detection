@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KidGuard Status</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🛡️</div>
+      <h1>KidGuard</h1>
+      <p class="subtitle">Child Online Protection</p>
+    </div>
+
+    <div id="status-container">
+      <div class="status-card">
+        <div class="status-indicator" id="status-indicator">
+          <span class="pulse"></span>
+        </div>
+        <h2 id="status-text">Checking...</h2>
+        <p id="status-detail">Initializing monitoring</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-label">Messages</span>
+          <span class="stat-value" id="message-count">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Last Activity</span>
+          <span class="stat-value" id="last-activity">None</span>
+        </div>
+      </div>
+
+      <div class="config-section">
+        <h3>Parent Setup</h3>
+        <div class="form-group">
+          <label for="parent-id">Parent ID:</label>
+          <input type="text" id="parent-id" placeholder="Enter your parent ID">
+        </div>
+        <div class="form-group">
+          <label for="child-name">Child's Name:</label>
+          <input type="text" id="child-name" placeholder="Enter child's name">
+        </div>
+        <button id="save-config" class="btn-primary">Save Settings</button>
+      </div>
+
+      <div class="actions">
+        <button id="open-dashboard" class="btn-secondary">Open Dashboard</button>
+        <button id="view-logs" class="btn-secondary">View Logs</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>For parents & guardians</p>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
