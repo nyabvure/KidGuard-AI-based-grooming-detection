@@ -228,21 +228,6 @@ POST /api/alert/sms
 
 ## 🧪 Testing
 
-### Test Backend API
-
-```bash
-# Test root endpoint
-curl https://kidguard-chat-1.preview.emergentagent.com/api/
-
-# Create test parent
-curl -X POST https://kidguard-chat-1.preview.emergentagent.com/api/parents \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Test Parent","phone":"+1234567890"}'
-
-# Get stats
-curl https://kidguard-chat-1.preview.emergentagent.com/api/stats
-```
-
 ### Test Chrome Extension
 
 1. Visit any Roblox page
@@ -375,8 +360,7 @@ If SMS alerts aren't working:
 ## 📞 Contact & Support
 
 For questions or support:
-- **Dashboard**: https://kidguard-chat-1.preview.emergentagent.com
-- **Backend API**: https://kidguard-chat-1.preview.emergentagent.com/api/
+- **Reach out**: nathannyabvure@gmail.com
 - **Documentation**: /app/README.md
 
 ## 📄 License
